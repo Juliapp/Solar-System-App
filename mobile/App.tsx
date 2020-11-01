@@ -4,21 +4,15 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { Colors, Gradients } from './src/Styles/StyleGuide';
 import Button from './src/components/Button';
+import Foward from './assets/icons/Forward.svg';
+
 export default function App() {
   return (
     <View style={Colors.brandBackground}>
-      <Button />
+      <Button label="dkasjdhkasjh" Icon={Foward} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  teste: {
-    display: 'flex',
-    width: '100%',
-    height: '100%',
-  },
-});
 
 /*export default function App() {
   return (

@@ -14,49 +14,49 @@ export const Colors = StyleSheet.create({
 });
 
 interface styled {
-  styles?: StyleProp<ViewStyle>;
+  style?: StyleProp<ViewStyle>;
 }
 
-const button: React.FC<styled> = ({ styles, children }) => {
+const button: React.FC<styled> = ({ style, children }) => {
   return (
     <LinearGradient
       colors={['#EF5F53', '#FA8F70']}
       start={[0, 0]}
       end={[1, 0]}
-      style={styles}
+      style={style}
     >
       {children}
     </LinearGradient>
   );
 };
 
-const blue: React.FC<styled> = ({ styles, children }) => {
+const blue: React.FC<styled> = ({ style, children }) => {
   return (
-    <LinearGradient colors={['#5935FF', '#47408E']} style={styles}>
+    <LinearGradient colors={['#5935FF', '#47408E']} style={style}>
       {children}
     </LinearGradient>
   );
 };
 
-const pink: React.FC<styled> = ({ styles, children }) => {
+const pink: React.FC<styled> = ({ style, children }) => {
   return (
-    <LinearGradient colors={['#FF6CD9', '#FF2184']} style={styles}>
+    <LinearGradient colors={['#FF6CD9', '#FF2184']} style={style}>
       {children}
     </LinearGradient>
   );
 };
 
-const cyan: React.FC<styled> = ({ styles, children }) => {
+const cyan: React.FC<styled> = ({ style, children }) => {
   return (
-    <LinearGradient colors={['#01D4E4', '#009DE0']} style={styles}>
+    <LinearGradient colors={['#01D4E4', '#009DE0']} style={style}>
       {children}
     </LinearGradient>
   );
 };
 
-const yellow: React.FC<styled> = ({ styles, children }) => {
+const yellow: React.FC<styled> = ({ style, children }) => {
   return (
-    <LinearGradient colors={['#F9C270', '#FFAA2B']} style={styles}>
+    <LinearGradient colors={['#F9C270', '#FFAA2B']} style={style}>
       {children}
     </LinearGradient>
   );
