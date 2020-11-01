@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Text, View } from 'react-native';
 import { SvgProps } from 'react-native-svg';
-import { Gradients } from '../../Styles/StyleGuide';
+import { Gradients, Fonts } from '../../Styles/StyleGuide';
 import Styles from './styles';
 
 interface IButtonProps {
@@ -11,7 +11,7 @@ interface IButtonProps {
 const Button: React.FC<IButtonProps> = ({ label, Icon }) => {
   return (
     <Gradients.button style={Styles.gradient}>
-      <Text style={{ color: '#ffffff', fontFamily: 'Roboto' }}>{label}</Text>
+      <Text style={[Fonts.buttonTitle(), { color: '#fff' }]}>{label}</Text>
       {Icon && <Icon style={{ marginLeft: 16 }} />}
     </Gradients.button>
   );

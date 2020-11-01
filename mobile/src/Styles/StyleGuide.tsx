@@ -1,5 +1,11 @@
 import React from 'react';
-import { StyleProp, StyleSheet, Text, ViewStyle } from 'react-native';
+import {
+  StyleProp,
+  StyleSheet,
+  TextProps,
+  TextStyle,
+  ViewStyle,
+} from 'react-native';
 //import LinearGradient from 'react-native-linear-gradient';
 
 import { LinearGradient } from 'expo-linear-gradient';
@@ -68,4 +74,43 @@ export const Gradients = {
   pink,
   cyan,
   yellow,
+};
+
+export const Fonts = {
+  homeTitle(): StyleProp<TextStyle> {
+    return {
+      fontFamily: 'Roboto',
+      fontWeight: '700',
+      fontSize: 32,
+    };
+  },
+
+  buttonTitle(): StyleProp<TextStyle> {
+    return {
+      fontFamily: 'Roboto',
+      fontWeight: '700',
+      fontSize: 16,
+    };
+  },
+  paragraph(): StyleProp<TextStyle> {
+    return {
+      fontFamily: 'Roboto',
+      fontWeight: '400',
+      fontSize: 16,
+    };
+  },
+  placeholder(): StyleProp<TextStyle> {
+    return {
+      fontFamily: 'Roboto',
+      fontWeight: '400',
+      fontSize: 14,
+    };
+  },
+  bottomBarItem(): StyleProp<TextStyle> {
+    return {
+      fontFamily: 'Roboto',
+      fontWeight: '400',
+      fontSize: 12,
+    };
+  },
 };
