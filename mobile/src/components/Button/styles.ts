@@ -6,7 +6,7 @@ export default StyleSheet.create({
   },
 
   gradient: {
-    position: 'absolute',
+    marginTop: 16,
     borderRadius: 8,
     backgroundColor: '#00000000',
     paddingHorizontal: 32,

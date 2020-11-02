@@ -1,14 +1,11 @@
 import React from 'react';
-import { View } from 'react-native';
 
-import { Colors, Gradients } from './src/Styles/StyleGuide';
-import Button from './src/components/Button';
-import Foward from './assets/icons/Forward.svg';
 import {
   useFonts,
   Roboto_700Bold,
   Roboto_400Regular,
 } from '@expo-google-fonts/roboto';
+import WelcomeRoutes from './src/Routes/Welcome.Routes';
 
 export default function App() {
   const [fontsLoadead] = useFonts({
@@ -20,11 +17,16 @@ export default function App() {
     return null;
   }
 
-  return (
-    <View style={Colors.brandBackground}>
-      <Button label="dkasjdhkasjh" Icon={Foward} />
-    </View>
-  );
+  /*
+  if(is not logged){
+    return <Welcome/>
+  }else{
+    return <Routes/>
+  }
+  
+  */
+
+  return <WelcomeRoutes />;
 }
 
 /*export default function App() {
