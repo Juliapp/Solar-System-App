@@ -10,14 +10,10 @@ import {
 
 import { LinearGradient } from 'expo-linear-gradient';
 
-export const Colors = StyleSheet.create({
-  brandBackground: {
-    backgroundColor: '#151515',
-  },
-  brandWhite: {
-    backgroundColor: '#ffffff',
-  },
-});
+export const Colors = {
+  brandBackground: '#151515',
+  brandWhite: '#ffffff',
+};
 
 interface styled {
   style?: StyleProp<ViewStyle>;

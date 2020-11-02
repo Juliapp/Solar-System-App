@@ -14,7 +14,7 @@ const Welcome: React.FC = () => {
   };
 
   return (
-    <View style={[styles.container, Colors.brandBackground]}>
+    <View style={[styles.container]}>
       <BackgroundImage style={styles.backgroundImage} />
       <Text style={[styles.belt, Fonts.paragraph()]}>Aperte o cinto</Text>
       <Text style={[styles.title, Fonts.homeTitle()]}>
@@ -34,6 +34,7 @@ const Welcome: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: Colors.brandBackground,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
