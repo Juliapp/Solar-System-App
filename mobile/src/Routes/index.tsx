@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomePage from '../pages/HomePage';
 import Search from '../pages/Search';
@@ -19,6 +18,11 @@ const HomeRoutes: React.FC = () => {
       initialRouteName="Início"
       sceneContainerStyle={{ backgroundColor: 'red' }}
       tabBarOptions={{
+        activeTintColor: '#fff',
+        inactiveTintColor: '#ffffff00',
+        labelStyle: {
+          marginBottom: 10,
+        },
         style: [
           {
             backgroundColor: Colors.brandBackground,
@@ -26,7 +30,7 @@ const HomeRoutes: React.FC = () => {
             borderTopLeftRadius: 32,
             borderTopRightRadius: 32,
             padding: 10,
-            height: 60,
+            height: 65,
             position: 'absolute',
           },
         ],
@@ -36,28 +40,56 @@ const HomeRoutes: React.FC = () => {
         name="Início"
         component={HomePage}
         options={{
-          tabBarIcon: () => <HomeIcon />,
+          tabBarIcon: ({ focused }) => (
+            <HomeIcon
+              style={{
+                opacity: focused ? 0.95 : 0.5,
+                marginBottom: focused ? 6 : 0,
+              }}
+            />
+          ),
         }}
       />
       <Tab.Screen
         name="Buscar"
         component={Search}
         options={{
-          tabBarIcon: () => <SearchIcon stroke="#000" />,
+          tabBarIcon: ({ focused }) => (
+            <SearchIcon
+              style={{
+                opacity: focused ? 0.95 : 0.5,
+                marginBottom: focused ? 6 : 0,
+              }}
+            />
+          ),
         }}
       />
       <Tab.Screen
         name="Favoritos"
         component={Favorites}
         options={{
-          tabBarIcon: () => <BookMarkIcon />,
+          tabBarIcon: ({ focused }) => (
+            <BookMarkIcon
+              style={{
+                opacity: focused ? 0.95 : 0.5,
+                marginBottom: focused ? 6 : 0,
+              }}
+            />
+          ),
         }}
       />
       <Tab.Screen
         name="Galeria"
         component={Gallery}
         options={{
-          tabBarIcon: () => <GalleryIcon />,
+          tabBarIcon: ({ focused }) => (
+            <GalleryIcon
+              style={{
+                opacity: focused ? 0.95 : 0.5,
+                marginBottom: focused ? 6 : 0,
+              }}
+            />
+          ),
         }}
       />
     </Tab.Navigator>
