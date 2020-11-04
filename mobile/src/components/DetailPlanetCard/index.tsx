@@ -45,7 +45,7 @@ const DetailPlanetCard: React.FC<IDetailPlanetCardProps> = ({
 const styles = StyleSheet.create({
   container: {
     width: '92%',
-    height: 200,
+    height: 175,
     backgroundColor: Colors.brandBackground,
     borderRadius: 8,
     overflow: 'hidden',
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   footer: {
     flexDirection: 'row',
-    marginTop: 25,
+    marginTop: 20,
     alignItems: 'center',
   },
 });
