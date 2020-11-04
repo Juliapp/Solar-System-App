@@ -1,20 +1,25 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import Background from '../../../assets/images/BackgroundApp.svg';
+import { Colors } from '../../Styles/StyleGuide';
 
 const Favorites: React.FC = () => {
   return (
-    <View style={ styles.container }>
-      <Text style={ styles.title }>Favorites</Text>
+    <View style={styles.container}>
+      <Background style={styles.background} />
+      <Text style={styles.title}>Favorites</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#312e38',
+    backgroundColor: Colors.brandBackground,
+  },
+  background: {
+    position: 'absolute',
+    zIndex: 0,
   },
   title: {
     fontWeight: 'bold',

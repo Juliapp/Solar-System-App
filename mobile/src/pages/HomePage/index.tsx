@@ -9,7 +9,7 @@ import PlanetsIcon from '../../../assets/icons/Planets.svg';
 import AsteroidsIcon from '../../../assets/icons/Asteroids.svg';
 import StarsIcon from '../../../assets/icons/Stars.svg';
 import GalaxiesIcon from '../../../assets/icons/Galaxies.svg';
-import PlanetCard from '../PlanetCard';
+import PlanetCard from '../../components/PlanetCard';
 
 import Sun from '../../../assets/images/Sun.svg';
 import Mercury from '../../../assets/images/Mercury.svg';
@@ -19,7 +19,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 const HomePage: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Background style={styles.backgound} />
+      <Background style={styles.background} />
       <Header />
       <View style={styles.content}>
         <Text style={[styles.paragraph, Fonts.paragraph()]}>Categorias</Text>
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   content: {
     padding: 16,
   },
-  backgound: {
+  background: {
     position: 'absolute',
     zIndex: 0,
   },

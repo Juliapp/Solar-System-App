@@ -77,7 +77,7 @@ export const Fonts = {
     return {
       fontFamily: 'Roboto',
       fontWeight: '700',
-      fontSize: 32,
+      fontSize: 30,
     };
   },
 
