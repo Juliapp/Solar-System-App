@@ -9,7 +9,7 @@ interface IHeaderProps {
   home?: boolean;
   stackIcon?: boolean;
 }
-const Header: React.FC<IHeaderProps> = ({ home = true, stackIcon = false }) => {
+const Header: React.FC<IHeaderProps> = ({ home, stackIcon }) => {
   return (
     <View style={styles.container}>
       {home ? (
@@ -23,7 +23,9 @@ const Header: React.FC<IHeaderProps> = ({ home = true, stackIcon = false }) => {
           </Text>
         </View>
       ) : stackIcon ? (
-        <Back />
+        <TouchableOpacity>
+          <Back width={24} height={24} />
+        </TouchableOpacity>
       ) : (
         <View></View>
       )}

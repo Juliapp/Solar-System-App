@@ -7,11 +7,13 @@ import { Colors } from '../../Styles/StyleGuide';
 import Saturno from '../../../assets/images/Saturn.svg';
 import Plutao from '../../../assets/images/Pluto.svg';
 import { ScrollView } from 'react-native-gesture-handler';
+import Input from '../../components/Input';
 
 const Search: React.FC = () => {
   return (
     <View style={styles.container}>
       <Background style={styles.background} />
+      <Input placeholderText="Procure galaxias, planetas..." />
       <ScrollView
         style={styles.scrollview}
         contentContainerStyle={{ alignItems: 'center' }}
@@ -35,6 +37,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.brandBackground,
+    paddingTop: 40,
   },
   title: {
     fontWeight: 'bold',
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   scrollview: {
-    marginVertical: 60,
+    marginVertical: 30,
   },
 });
 

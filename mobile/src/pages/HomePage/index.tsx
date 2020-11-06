@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
   return (
     <View style={styles.container}>
       <Background style={styles.background} />
-      <Header />
+      <Header home />
       <View style={styles.content}>
         <Text style={[styles.paragraph, Fonts.paragraph()]}>Categorias</Text>
         <View style={styles.categoriesBlock}>

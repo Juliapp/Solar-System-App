@@ -23,6 +23,8 @@ const HomeRoutes: React.FC = () => {
         labelStyle: {
           marginBottom: 10,
         },
+        keyboardHidesTabBar: true,
+
         style: [
           {
             backgroundColor: Colors.brandBackground,

@@ -2,13 +2,17 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Background from '../../../assets/images/BackgroundApp.svg';
 import { Colors } from '../../Styles/StyleGuide';
+import DetailPage from '../DetailPage';
 const Gallery: React.FC = () => {
+  /*
   return (
     <View style={styles.container}>
       <Background style={styles.background} />
       <Text style={styles.title}>Gallery</Text>
     </View>
   );
+  */
+  return <DetailPage />;
 };
 
 const styles = StyleSheet.create({
